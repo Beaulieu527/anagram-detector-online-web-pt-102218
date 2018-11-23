@@ -8,7 +8,6 @@ class Anagram
   end
 
   def match(words)
-    ef match(words)
     words.select do |word|
       is_anagram?(word)
     end
