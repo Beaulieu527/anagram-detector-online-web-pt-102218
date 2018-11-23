@@ -8,8 +8,12 @@ class Anagram
   end
 
   def match(word)
-    ana = w.split("").sort == @word.split("").sort
-
-    return ana
+    matches = []
+    @word.each do |w|
+     if w.split("").sort == @word.split("").sort
+       matches << w
+    end
+  end
+  return matches
   end
 end
