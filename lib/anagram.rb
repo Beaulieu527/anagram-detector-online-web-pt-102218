@@ -14,7 +14,7 @@ class Anagram
        matches << w
      end
     end
-    return matches
+     matches
   end
 
 
