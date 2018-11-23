@@ -7,10 +7,14 @@ class Anagram
     @word = word
   end
 
-  def match(words)
-    words.select do |word|
-      word.chars.sort == @word.chars.sort
+  def match(arr)
+    matches = []
+    arr.each do |w|
+     if w.split("").sort == @word.split("").sort
+       matches << w
+     end
     end
+    return matches
   end
 
 
