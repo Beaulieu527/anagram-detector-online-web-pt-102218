@@ -8,14 +8,16 @@ class Anagram
   end
 
   def match(words)
-    matches = []
-    @word.select do |w|
-     if w.split("").sort == @word.split("").sort
-       matches << w
-     end
+    ef match(words)
+    words.select do |word|
+      is_anagram?(word)
     end
-    return matches
   end
+
+  def is_anagram?(word)
+    word.chars.sort == @anagram.chars.sort
+  end
+
 
 
 end
