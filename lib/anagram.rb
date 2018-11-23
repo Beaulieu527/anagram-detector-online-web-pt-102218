@@ -13,7 +13,7 @@ class Anagram
      if w.split("").sort == @word.split("").sort
        matches << w
      end
-    end
+
     return matches
   end
 
